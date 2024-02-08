@@ -22,7 +22,6 @@ token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMjE5MmEyY2
 headers = {'Accept': 'application/json', "Authorization": "Bearer " + token}
 url = 'https://www.robotevents.com/api/v2/events/' + str(event_id) + '/teams?&per_page=1000'
 r = requests.get(url, headers=headers)
-print(r.content)
 rj = r.json()
 teams = (rj['data'])
 for team in teams:

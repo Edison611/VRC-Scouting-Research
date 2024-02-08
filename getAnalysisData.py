@@ -1,9 +1,9 @@
 import requests
 import pandas as pd
 
-df = pd.read_excel('./eventData/hollywoodData.xlsx')
+df = pd.read_excel('./eventData/battleOfTheBotsData.xlsx')
 
-worlds = df.query('qualifiedForWorlds == 1')
+worlds = df.query('qualifiedForWorlds == 0')
 worlds = worlds.get(['teamNumber', 'tsRanking', 'scoreDriverMax', 'scoreAutoMax', 'scoreTotalMax', 'qualifiedForWorlds'])
 worlds = worlds.sort_values(['scoreTotalMax'], ascending=False)
 
