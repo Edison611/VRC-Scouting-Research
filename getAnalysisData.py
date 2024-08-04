@@ -10,7 +10,7 @@ worlds = worlds.sort_values(['scoreTotalMax'], ascending=False)
 print(worlds.to_string())
 
 
-# headers = {'Accept': 'application/json'}
+# headers = {'Accept': 'application/json'}  
 # response = requests.get("https://vrc-data-analysis.com/event/RE-VRC-23-1524", headers=headers)
 # rj = response.content
 #
